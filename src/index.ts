@@ -5,9 +5,9 @@ Types.set("object",(x: object):boolean => typeof x === 'object' && !Array.isArra
 Types.set("map",(x:object):boolean => x instanceof Map);
 Types.set("array",(x:object):boolean => Array.isArray(x));
 Types.set("number", (x: string | number):boolean => {
-	const l = !Types.get("array");
+	const l = Types.get("array");
 	if(l===undefined) return false;
-	return /^-?\d+$/.test(`${x}`) && l(x);
+	return /^-?\d+$/.test(`${x}`) && !l(x);
 });
 Types.set("char", (x: string):boolean => typeof x==='string' && x?.length===1);
 Types.set("string",(x:string):boolean => typeof x==='string');
