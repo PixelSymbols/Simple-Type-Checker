@@ -1,4 +1,3 @@
-"use strict";
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -16,11 +15,11 @@ var __copyProps = (to, from, except, desc) => {
   return to;
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-var type_checker_exports = {};
-__export(type_checker_exports, {
-  default: () => type_checker_default
+var src_exports = {};
+__export(src_exports, {
+  default: () => src_default
 });
-module.exports = __toCommonJS(type_checker_exports);
+module.exports = __toCommonJS(src_exports);
 const Types = /* @__PURE__ */ new Map();
 Types.set("int", (x) => typeof x === "number" && !Number.isNaN(x));
 Types.set("object", (x) => typeof x === "object" && !Array.isArray(x) && x !== null && !(x instanceof Map));
@@ -47,7 +46,7 @@ const find = (x) => {
   return o;
 };
 const is = Object.fromEntries(Types);
-var type_checker_default = { find, is, Types };
+var src_default = { find, is, Types };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {});
 //# sourceMappingURL=index.js.map

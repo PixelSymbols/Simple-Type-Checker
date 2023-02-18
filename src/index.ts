@@ -26,5 +26,4 @@ const find:Function = (x:any):string[] => {
 	return o;
 }
 const is = Object.fromEntries(Types);
-
 export default {find,is,Types};

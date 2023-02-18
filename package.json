@@ -1,0 +1,19 @@
+{
+  "name": "simple-type-checker",
+  "version": "1.0.0",
+  "description": "Just advanced version of type checker, made simple to use",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \u0022Error: no test specified\u0022 \u0026\u0026 exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "type-checker",
+    "type-validator",
+    "types",
+    "type-finder"
+  ],
+  "author": "pixelsymbols",
+  "license": "ISC",
+  "type": "module"
+}
