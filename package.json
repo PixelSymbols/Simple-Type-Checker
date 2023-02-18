@@ -1,5 +1,5 @@
 {
-  "name": "simple-type-checker",
+  "name": "easier-type-checker",
   "version": "1.0.0",
   "description": "Just advanced version of type checker, made simple to use",
   "main": "dist/index.js",
