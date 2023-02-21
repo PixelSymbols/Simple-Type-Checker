@@ -13,6 +13,8 @@ Types.set("char", (x: string):boolean => typeof x==='string' && x?.length===1);
 Types.set("string",(x:string):boolean => typeof x==='string');
 Types.set("symbol",(x:string):boolean => typeof x==='symbol');
 Types.set("null",(x:string):boolean => x===null);
+Types.set("boolean",(x:string):boolean => typeof x==='boolean');
+
 
 Types.set("ENG",(x:string):boolean=>/^[a-zA-Z]+$/.test(x) && typeof x==='string');
 Types.set("symbols",(x:string):boolean=>/^[ -\/:-@\[-\`{-~]+$/.test(x) && typeof x==='string');

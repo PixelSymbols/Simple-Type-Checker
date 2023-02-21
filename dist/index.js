@@ -13,6 +13,7 @@ Types.set("char", (x) => typeof x === 'string' && x?.length === 1);
 Types.set("string", (x) => typeof x === 'string');
 Types.set("symbol", (x) => typeof x === 'symbol');
 Types.set("null", (x) => x === null);
+Types.set("boolean", (x) => typeof x === 'boolean');
 Types.set("ENG", (x) => /^[a-zA-Z]+$/.test(x) && typeof x === 'string');
 Types.set("symbols", (x) => /^[ -\/:-@\[-\`{-~]+$/.test(x) && typeof x === 'string');
 const find = (x) => {
